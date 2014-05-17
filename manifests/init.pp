@@ -1,8 +1,10 @@
 # == Class: puppet_config
 #
-# Extends puppetlabs-ini_file to provide a resource provider on puppet.conf configs.
+# Extends puppetlabs-ini_file to provide a resource provider on puppet.conf
+# configs.
 #
-# Determines location from puppet's --config parameter, if you wish to use this with ralsh.
+# Determines location from puppet's --config parameter, if you wish to use
+# this with ralsh.
 #
 # Will only really work with the current puppet runtime.
 #
