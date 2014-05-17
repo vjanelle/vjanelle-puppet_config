@@ -1,39 +1,28 @@
 # == Class: puppet_config
 #
-# Full description of class puppet_config here.
+# Extends puppetlabs-ini_file to provide a resource provider on puppet.conf configs.
+#
+# Determines location from puppet's --config parameter, if you wish to use this with ralsh.
+#
+# Will only really work with the current puppet runtime.
 #
 # === Parameters
 #
-# Document parameters here.
-#
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
-#   e.g. "Specify one or more upstream ntp servers as an array."
-#
-# === Variables
-#
-# Here you should define a list of variables that this module would require.
-#
-# [*sample_variable*]
-#   Explanation of how this variable affects the funtion of this class and if
-#   it has a default. e.g. "The parameter enc_ntp_servers must be set by the
-#   External Node Classifier as a comma separated list of hostnames." (Note,
-#   global variables should be avoided in favor of class parameters as
-#   of Puppet 2.6.)
+# [*name*]
+#   The key to set.  "section/setting_name" determines where you want to put it.
+#   Section will be [section], setting_name will be the key
 #
 # === Examples
 #
-#  class { puppet_config:
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
-#  }
+# puppet_config { 'agent/server': value => 'something }
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Vincent Janelle <randomfrequency@gmail.com>
 #
 # === Copyright
 #
-# Copyright 2013 Your name here, unless otherwise noted.
+# Copyright 2014 Vincent Janelle, Apache License, Version 2.0
 #
 class puppet_config {
 
