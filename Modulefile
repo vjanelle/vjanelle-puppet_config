@@ -4,6 +4,7 @@ author 'vjanelle'
 license 'Apache License, Version 2.0'
 summary "Provides an instance, extending puppetlabs/inifile and allowing for puppet to manage puppet's config file via ralsh"
 description "Provides an instance, extending puppetlabs/inifile and allowing for puppet to manage puppet's config file via ralsh"
+source "https://github.com/vjanelle/vjanelle-puppet_config"
 # project_page 'UNKNOWN'
 
 ## Add dependencies, if any:
